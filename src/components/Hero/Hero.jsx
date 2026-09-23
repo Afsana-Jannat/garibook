@@ -609,9 +609,6 @@ function Hero() {
 
         </div>
 
-
-            // BLUE JOURNEY SECTION
-
         <section
           ref={blueSectionRef}
           className="hero-blue-section"
