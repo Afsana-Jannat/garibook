@@ -1,0 +1,507 @@
+
+.download-app-section {
+  width: 100%;
+
+  background: #ffffff;
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+
+.download-app-wrapper {
+  width: min(1312px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+
+.download-app-box {
+  width: 100%;
+
+  height: 425px;
+
+  background: #1f57ff;
+
+  border-radius: 15px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.download-app-content {
+  width: 58%;
+
+  padding-left: 88px;
+
+  position: relative;
+
+  z-index: 5;
+
+  color: #ffffff;
+}
+
+
+.download-app-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 42px;
+
+  line-height: 1.12;
+
+  font-weight: 700;
+
+  letter-spacing: -1.6px;
+}
+
+
+.download-app-content p {
+  margin: 12px 0 25px;
+
+  color: #ffffff;
+
+  font-size: 21px;
+
+  line-height: 1.32;
+
+  font-weight: 400;
+}
+
+
+.download-app-button {
+  width: 290px;
+
+  height: 71px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  padding: 0 24px 0 27px;
+
+  background: #ffd400;
+
+  color: #111111;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.download-app-button:hover {
+  transform: translateY(-3px);
+
+  background: #ffda22;
+}
+
+.download-app-arrow {
+  font-size: 29px;
+
+  line-height: 1;
+
+  font-weight: 400;
+
+  transition: transform 0.25s ease;
+}
+
+
+.download-app-button:hover .download-app-arrow {
+  transform: translateX(5px);
+}
+
+
+.download-app-image-wrapper {
+  position: absolute;
+
+  z-index: 3;
+
+  right: 45px;
+
+  bottom: -125px;
+
+  width: 505px;
+
+  height: 560px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  pointer-events: none;
+}
+
+
+.download-app-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  object-position: center top;
+
+  transform-origin: center top;
+}
+
+
+@media (min-width: 1500px) {
+
+  .download-app-wrapper {
+    width: min(1312px, calc(100% - 120px));
+  }
+
+
+  .download-app-box {
+    height: 425px;
+  }
+
+
+  .download-app-content {
+    padding-left: 88px;
+  }
+
+
+  .download-app-image-wrapper {
+    right: 45px;
+
+    bottom: -125px;
+
+    width: 505px;
+
+    height: 560px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+
+  .download-app-section {
+    padding-top: 85px;
+
+    padding-bottom: 55px;
+  }
+
+
+  .download-app-wrapper {
+    width: calc(100% - 60px);
+  }
+
+
+  .download-app-box {
+    height: 400px;
+  }
+
+
+  .download-app-content {
+    width: 57%;
+
+    padding-left: 65px;
+  }
+
+
+  .download-app-content h2 {
+    font-size: 37px;
+  }
+
+
+  .download-app-content p {
+    font-size: 18px;
+  }
+
+
+  .download-app-button {
+    width: 270px;
+
+    height: 65px;
+
+    font-size: 17px;
+  }
+
+
+  .download-app-image-wrapper {
+    right: 15px;
+
+    bottom: -115px;
+
+    width: 455px;
+
+    height: 515px;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .download-app-section {
+    padding-top: 70px;
+
+    padding-bottom: 50px;
+  }
+
+
+  .download-app-wrapper {
+    width: calc(100% - 40px);
+  }
+
+
+  .download-app-box {
+    height: 370px;
+
+    border-radius: 14px;
+  }
+
+
+  .download-app-content {
+    width: 60%;
+
+    padding-left: 45px;
+  }
+
+
+  .download-app-content h2 {
+    font-size: 32px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1px;
+  }
+
+
+  .download-app-content p {
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    margin-top: 12px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .download-app-button {
+    width: 245px;
+
+    height: 60px;
+
+    font-size: 16px;
+  }
+
+
+  .download-app-image-wrapper {
+    right: -10px;
+
+    bottom: -100px;
+
+    width: 400px;
+
+    height: 470px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .download-app-section {
+    padding-top: 65px;
+
+    padding-bottom: 45px;
+  }
+
+
+  .download-app-wrapper {
+    width: calc(100% - 30px);
+  }
+
+
+  .download-app-box {
+    height: auto;
+
+    min-height: 650px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    border-radius: 15px;
+
+    padding-top: 50px;
+  }
+
+
+  .download-app-content {
+    width: 100%;
+
+    padding: 0 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+  }
+
+
+  .download-app-content h2 {
+    font-size: 34px;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.2px;
+  }
+
+
+  .download-app-content p {
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    margin: 16px 0 24px;
+  }
+
+
+  .desktop-break {
+    display: none;
+  }
+
+
+  .download-app-button {
+    width: 235px;
+
+    height: 58px;
+
+    margin: 0 auto;
+
+    padding-left: 22px;
+
+    padding-right: 20px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+  }
+
+
+  .download-app-arrow {
+    font-size: 25px;
+  }
+
+
+  .download-app-image-wrapper {
+    position: absolute;
+
+    right: -45px;
+
+    bottom: -100px;
+
+    width: 390px;
+
+    height: 480px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+  }
+
+
+  .download-app-image {
+    object-position: center top;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .download-app-section {
+    padding-top: 55px;
+
+    padding-bottom: 40px;
+  }
+
+
+  .download-app-wrapper {
+    width: calc(100% - 24px);
+  }
+
+
+  .download-app-box {
+    min-height: 610px;
+
+    padding-top: 42px;
+  }
+
+
+  .download-app-content {
+    padding: 0 18px;
+  }
+
+
+  .download-app-content h2 {
+    font-size: 30px;
+
+    line-height: 1.08;
+  }
+
+
+  .download-app-content p {
+    font-size: 14px;
+
+    margin-top: 14px;
+  }
+
+
+  .download-app-button {
+    width: 220px;
+
+    height: 56px;
+
+    font-size: 15px;
+  }
+
+
+  .download-app-arrow {
+    font-size: 24px;
+  }
+
+
+  .download-app-image-wrapper {
+    right: -55px;
+
+    bottom: -90px;
+
+    width: 350px;
+
+    height: 440px;
+  }
+}

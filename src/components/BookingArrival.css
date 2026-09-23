@@ -1,0 +1,404 @@
+
+
+.booking-arrival-section {
+  width: 100%;
+  margin: 0;
+  padding: 80px 0 90px;
+  background: #000000;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.booking-arrival-container {
+  width: min(1380px, calc(100% - 120px));
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+.booking-arrival-header {
+  width: 100%;
+  margin: 0;
+}
+
+
+
+.booking-arrival-heading {
+  margin: 0;
+  max-width: 950px;
+
+  color: #ffffff;
+
+  font-size: 60px;
+  line-height: 1.02;
+  font-weight: 600;
+  letter-spacing: -3px;
+
+  text-align: left;
+
+  will-change: transform, opacity;
+}
+
+
+
+.booking-arrival-grid {
+  width: 100%;
+  margin-top: 80px;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr;
+
+  grid-template-rows: 460px 330px;
+
+  column-gap: 24px;
+  row-gap: 12px;
+
+  box-sizing: border-box;
+}
+
+
+.booking-arrival-card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #111111;
+
+  will-change: transform, opacity;
+}
+
+
+
+.booking-arrival-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: inherit;
+}
+
+
+
+.booking-arrival-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: inherit;
+
+  transition: transform 0.7s ease;
+}
+
+
+
+.booking-arrival-card:hover
+.booking-arrival-image {
+  transform: scale(1.035);
+}
+
+
+
+/* Explore = 2/3 width */
+.booking-arrival-explore {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+
+/* Freedom = 1/3 width */
+.booking-arrival-freedom {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+
+
+/* Smooth */
+.booking-arrival-smooth {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+
+/* Preferred Car */
+.booking-arrival-preferred {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+/* Safe Travel */
+.booking-arrival-safe {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+
+
+.booking-arrival-safe-wrapper {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+}
+
+
+.booking-arrival-safe-image {
+  display: block;
+
+  width: 75%;
+  height: 75%;
+
+  object-fit: contain;
+}
+
+   /* GSAP */
+
+.booking-arrival-heading,
+.booking-arrival-card {
+  will-change: transform, opacity;
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .booking-arrival-section {
+    padding: 120px 0 140px;
+  }
+
+
+  .booking-arrival-container {
+    width: calc(100% - 80px);
+  }
+
+
+  .booking-arrival-heading {
+    font-size: 52px;
+    letter-spacing: -2.5px;
+  }
+
+
+  .booking-arrival-grid {
+    margin-top: 65px;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    grid-template-rows: 390px 285px;
+
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+
+  .booking-arrival-card {
+    border-radius: 14px;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+
+  .booking-arrival-section {
+    padding: 100px 0 120px;
+  }
+
+
+  .booking-arrival-container {
+    width: calc(100% - 50px);
+  }
+
+
+  .booking-arrival-heading {
+    font-size: 44px;
+    line-height: 1.04;
+    letter-spacing: -2px;
+  }
+
+
+  .booking-arrival-grid {
+    margin-top: 55px;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    grid-template-rows: 330px 250px;
+
+    column-gap: 18px;
+    row-gap: 9px;
+  }
+
+
+  /* Top */
+  .booking-arrival-explore {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+
+  .booking-arrival-freedom {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+
+  /* Bottom */
+  .booking-arrival-smooth {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+
+  .booking-arrival-preferred {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+
+  .booking-arrival-safe {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+
+  .booking-arrival-card {
+    border-radius: 13px;
+  }
+}
+
+
+
+@media (max-width: 700px) {
+
+  .booking-arrival-section {
+    padding: 90px 0 100px;
+  }
+
+
+  .booking-arrival-container {
+    width: calc(100% - 36px);
+  }
+
+
+  .booking-arrival-heading {
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+  }
+
+
+  .booking-arrival-grid {
+    margin-top: 45px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+
+    gap: 18px;
+  }
+
+
+
+  .booking-arrival-explore,
+  .booking-arrival-freedom,
+  .booking-arrival-smooth,
+  .booking-arrival-preferred,
+  .booking-arrival-safe {
+
+    grid-column: auto;
+    grid-row: auto;
+
+    width: 100%;
+    height: 330px;
+  }
+
+
+  /* Explore slightly taller */
+  .booking-arrival-explore {
+    height: 360px;
+  }
+
+
+  /* Safe travel */
+  .booking-arrival-safe {
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .booking-arrival-section {
+    padding: 80px 0 90px;
+  }
+
+
+  .booking-arrival-container {
+    width: calc(100% - 36px);
+  }
+
+
+  .booking-arrival-heading {
+    font-size: 34px;
+    line-height: 1.06;
+    letter-spacing: -1.3px;
+  }
+
+
+  .booking-arrival-grid {
+    margin-top: 40px;
+
+    gap: 18px;
+  }
+
+
+  .booking-arrival-explore,
+  .booking-arrival-freedom,
+  .booking-arrival-smooth,
+  .booking-arrival-preferred {
+
+    height: 290px;
+
+    border-radius: 11px;
+  }
+
+
+  /* Explore */
+  .booking-arrival-explore {
+    height: 310px;
+  }
+
+
+  /* Safe */
+  .booking-arrival-safe {
+    height: 260px;
+
+    border-radius: 11px;
+  }
+
+
+  .booking-arrival-safe-image {
+    width: 70%;
+    height: 70%;
+  }
+}

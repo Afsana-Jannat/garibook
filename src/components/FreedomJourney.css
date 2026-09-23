@@ -1,0 +1,342 @@
+
+.freedom-journey {
+  width: 100%;
+  margin: 0;
+  padding: 90px 0 120px;
+
+  background: #000000;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+.freedom-container {
+  width: min(1380px, calc(100% - 120px));
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+.freedom-title {
+  margin: 0 0 65px;
+
+  color: #ffffff;
+
+  font-size: 60px;
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: -3px;
+
+  text-align: left;
+}
+
+.freedom-image-wrapper {
+  width: 100%;
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+.freedom-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: inherit;
+}
+
+
+.freedom-features {
+  width: calc(100% - 120px);
+
+  margin-top: 85px;
+  margin-left: 120px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 90px;
+
+  box-sizing: border-box;
+}
+
+.freedom-feature {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 22px;
+
+  min-width: 0;
+
+  transform: translateY(0);
+}
+
+
+.freedom-feature-icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.freedom-feature-icon img {
+  display: block;
+
+  width: 70px;
+  height: 70px;
+
+  object-fit: contain;
+}
+
+.freedom-feature-content {
+  padding: 0;
+
+  text-align: left;
+}
+
+.freedom-feature-content h3 {
+  margin: 0 0 12px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  letter-spacing: -0.5px;
+}
+
+.freedom-feature-content p {
+  margin: 0;
+
+  max-width: 230px;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  font-weight: 400;
+}
+
+.freedom-animate {
+  will-change: transform, opacity;
+}
+
+
+@media (max-width: 1200px) {
+
+  .freedom-journey {
+    padding: 120px 0 140px;
+  }
+
+  .freedom-container {
+    width: calc(100% - 80px);
+  }
+
+  .freedom-title {
+    font-size: 52px;
+
+    letter-spacing: -2.5px;
+
+    margin-bottom: 55px;
+  }
+
+  .freedom-image-wrapper {
+    height: 450px;
+  }
+
+
+  /* Features slightly shifted right */
+  .freedom-features {
+    width: calc(100% - 80px);
+
+    margin-top: 70px;
+    margin-left: 80px;
+
+    column-gap: 55px;
+  }
+
+  .freedom-feature-icon {
+    width: 62px;
+    height: 62px;
+  }
+
+  .freedom-feature-icon img {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .freedom-journey {
+    padding: 100px 0 120px;
+  }
+
+  .freedom-container {
+    width: calc(100% - 50px);
+  }
+
+  .freedom-title {
+    font-size: 44px;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 45px;
+  }
+
+  .freedom-image-wrapper {
+    height: 380px;
+  }
+
+
+  /* Features remain in one row */
+  .freedom-features {
+    width: calc(100% - 40px);
+
+    margin-top: 65px;
+    margin-left: 40px;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 35px;
+  }
+
+  .freedom-feature {
+    gap: 18px;
+  }
+
+  .freedom-feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .freedom-feature-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .freedom-feature-content h3 {
+    font-size: 21px;
+  }
+
+  .freedom-feature-content p {
+    max-width: 180px;
+
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .freedom-features {
+    width: 100%;
+
+    margin-left: 0;
+
+    grid-template-columns: 1fr;
+
+    row-gap: 50px;
+  }
+
+  .freedom-feature-content p {
+    max-width: 400px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .freedom-journey {
+    padding: 80px 0 90px;
+  }
+
+  .freedom-container {
+    width: calc(100% - 36px);
+  }
+
+  .freedom-title {
+    font-size: 36px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 35px;
+  }
+
+  .freedom-image-wrapper {
+    height: 280px;
+
+    border-radius: 10px;
+  }
+
+
+  /* Features */
+  .freedom-features {
+    width: 100%;
+
+    margin-top: 50px;
+    margin-left: 0;
+
+    grid-template-columns: 1fr;
+
+    row-gap: 45px;
+  }
+
+  .freedom-feature {
+    gap: 18px;
+  }
+
+  .freedom-feature-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .freedom-feature-icon img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .freedom-feature-content h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+  }
+
+  .freedom-feature-content p {
+    max-width: 100%;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+  }
+}
